@@ -64,13 +64,14 @@ margin-left: 5%;
   font-size: 28px;
 }
 .block-title {
-  margin-top: 5px;
+  margin-top: -15px;
 }
 .block-number {
-  margin-top: -10px;
+  margin-top: -15px;
+  margin-bottom: 20px;
 }
 .block-target {
-  margin-top: -30px;
+  margin-top: -20px;
   padding-bottom:40px;
 }
 #analysis-container{
@@ -89,7 +90,7 @@ border-radius: 9px;
 border:1px solid rgb(218, 218, 218);
 position:absolute;
 width: 555px;
-height: 570px;
+height: 500px;
 }
 #line-graph{
   height: 300px;
@@ -158,6 +159,7 @@ height: 570px;
 }
 #place-order {
   padding: 2px;
+  padding-bottom: 5px;
   text-transform: capitalize;
   border: 1px solid white;
   outline: none;
@@ -185,10 +187,10 @@ height: 570px;
   left: 35%;
 }
 .form_block > #title {
-  background: linear-gradient(50deg, #243133, #f53117, #323a3b);
+  background: linear-gradient(50deg,  #a619de,#51b5d3, #a619de);
   width: 95%;
   margin: auto;
-  padding: 4px;
+  padding: 14px;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
@@ -250,13 +252,13 @@ input[type="password"] {
 }
 .registerBtn {
   float: right;
-  background: #ff5722;
+  background:linear-gradient(45deg,#1971de, #a619de);
   color: #fff;
   height: 35px;
   width: 100%;
   box-sizing: border-box;
   padding: 4px 10px;
-  border: 1px solid #d12222;
+  border: 1px solid #010f1a;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -264,8 +266,7 @@ input[type="password"] {
   margin-top: 10px;
 }
 .registerBtn:hover {
-  background: #ff3300;
-  border: 1px solid #d12222;
+  background:linear-gradient(45deg,#2b82ec, #b527ec);
 }
 .sucess {
   padding: 4px;

@@ -29,7 +29,7 @@ export default class Analytics extends React.Component {
     return (
       <div>
         <div id="analysis-container">
-          <h6 style={{backgroundColor:"lightgray",padding:"10px"}}>Analytic Audience Mattric<img src="https://www.flaticon.com/svg/static/icons/svg/860/860760.svg" style={{height:20,width:20,marginLeft:"30%",opacity:0.3}}/></h6>
+          <h6 style={{backgroundColor:"lightgray",padding:"10px"}}>Analytic Audience Mattric<img src="https://www.flaticon.com/svg/static/icons/svg/860/860760.svg" style={{height:20,width:20,marginLeft:"40%",opacity:0.3}}/></h6>
          <div id="labels">
            <div><div style={{height:10,width:10,backgroundColor:"#30ab4c",borderRadius:"50%"}}></div><span>Active</span></div>
            <div><div style={{height:10,width:10,backgroundColor:"#1971de",borderRadius:"50%"}}></div><span>Hold</span></div>
@@ -39,8 +39,7 @@ export default class Analytics extends React.Component {
           data={state}
           options={{
             title:{
-              // display:true,
-              // text:'Average Rainfall per month',
+             
               fontSize:20
             },
             legend:{

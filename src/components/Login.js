@@ -2,6 +2,7 @@ import React from 'react';
 import fire from "../config/fire";
 import * as firebase from "firebase";
 import { BrowserRouter as Router, Redirect, Link } from "react-router-dom";
+import HeadBar from './HeadBar';
 
 class Login extends React.Component {
   constructor(props) {
@@ -37,9 +38,9 @@ class Login extends React.Component {
       .then((sucesss) => {
         this.setState({ sucessMsg: "Sucessfully Logged In", fireErrors: "" });
       })
-      .then((sucess) => {
-        this.setState({ logged: true });
-      })
+      // .then((sucess) => {
+      //   this.setState({ logged: true });
+      // })
 
       .catch((error) => {
         this.setState({ fireErrors: error.message });
@@ -110,15 +111,7 @@ class Login extends React.Component {
           value={this.state.name}
           onChange={this.handleChange}
         />
-        <div className="Tags">Address</div>
-        <textarea
-          type="text"
-          cols="32"
-          rows="3"
-          name="address"
-          value={this.state.address}
-          onChange={this.handleChange}
-        />
+       
       </div>
     ) : null;
 
@@ -148,6 +141,8 @@ class Login extends React.Component {
       </button>
     );
     return (
+      <>
+      
       <div className="slider">
         <div className="upperSlider"></div>
         <div className="form_block">
@@ -182,9 +177,10 @@ class Login extends React.Component {
             </form>
             {login_register}
           </div>
-          {linked}
+         
         </div>
       </div>
+   </>
     );
   }
 }

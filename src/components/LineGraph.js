@@ -27,7 +27,7 @@ export default class LineGraph extends React.Component {
     return (
       <div>
           <div id="line-graph">
-          <h6 style={{backgroundColor:"lightgray",padding:"10px"}}>Youtube Subscribers<img src="https://www.flaticon.com/svg/static/icons/svg/860/860760.svg" style={{height:20,width:20,marginLeft:"30%",opacity:0.3}}/></h6>
+          <h6 style={{backgroundColor:"lightgray",padding:"10px"}}>Youtube Subscribers<img src="https://www.flaticon.com/svg/static/icons/svg/483/483345.svg" style={{height:20,width:20,marginLeft:"55%",opacity:0.3}}/></h6>
           <div id="labels" style={{marginLeft:"25%"}}>
  <div><div style={{height:10,width:10,backgroundColor:"#1971de",borderRadius:"50%"}}></div><span>Desktop</span></div>
            <div><div style={{height:10,width:10,backgroundColor:"#ffc107",borderRadius:"50%"}}></div><span>Mobile</span></div>

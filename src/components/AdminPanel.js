@@ -9,7 +9,7 @@ import LineGraph from "./LineGraph";
 function AdminPanel() {
   return (
     <div className="App">
-      <HeadBar />
+     
       <SideBar />
      <UserChart/>
      <Analytics/>
