@@ -1,14 +1,14 @@
 import * as firebase from "firebase";
 import "firebase/firestore";
 const firebaseConfig = {
-    apiKey: "AIzaSyAT8gVCYiuNWhYfsiZWaIPlcoFzU7ur_6A",
-    authDomain: "shopping-site-2f091.firebaseapp.com",
-    databaseURL: "https://shopping-site-2f091.firebaseio.com",
-    projectId: "shopping-site-2f091",
-    storageBucket: "shopping-site-2f091.appspot.com",
-    messagingSenderId: "316192273235",
-    appId: "1:316192273235:web:f812d48803b13029b4e7a6",
-  };
+  apiKey: "AIzaSyDOdTYjJq0EiHbnz-xWn0HQTGitohEwklc",
+  authDomain: "adminpanel-a95b7.firebaseapp.com",
+  databaseURL: "https://adminpanel-a95b7.firebaseio.com",
+  projectId: "adminpanel-a95b7",
+  storageBucket: "adminpanel-a95b7.appspot.com",
+  messagingSenderId: "1057924985680",
+  appId: "1:1057924985680:web:6abecb83617bb72b6bf255"
+};
  
   const fire=firebase.initializeApp(firebaseConfig);
   export default fire;

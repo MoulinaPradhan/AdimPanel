@@ -2,15 +2,17 @@ import React from 'react';
 import fire from "../config/fire";
 import * as firebase from "firebase";
 import { BrowserRouter as Router, Redirect, Link } from "react-router-dom";
-import HeadBar from './HeadBar';
+
 
 class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       email: "",
-      name: "",
-      address: "",
+      firstname: "",
+      lastname:"",
+      isactive: false,
+      mobile:1,
       password: "",
       fireErrors: "",
       formTitle: "Login",
@@ -49,9 +51,13 @@ class Login extends React.Component {
 
   register = (e) => {
     e.preventDefault();
-    this.db.collection("contact").doc("GlDtWmI4Xcg9goiHBB7U").set({
-      name: this.state.name,
-      address: this.state.address,
+    this.db.collection("users").add({
+      firstname: this.state.firstname,
+      lastname:this.state.lastname,
+      isactive:this.state.isactive,
+      email:this.state.email,
+      password: this.state.password,
+      mobile:this.state.mobile,
     });
     fire
       .auth()
@@ -84,9 +90,7 @@ class Login extends React.Component {
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
-    //const email = e.target.value;
-    //localStorage.setItem("email", email);
-    //this.setState({ email });
+ 
   };
 
   render() {
@@ -97,18 +101,35 @@ class Login extends React.Component {
     let sucessNotification = this.state.sucessMsg ? (
       <div className="sucess">{this.state.sucessMsg}</div>
     ) : null;
-    let linked = this.state.logged ? (
-      <Link to="thankyou">
-        <button id="place-order">order details</button>
-      </Link>
-    ) : null;
+
     let RegisterForm = this.state.register ? (
       <div>
-        <div className="Tags">Name</div>
+        <div className="Tags">First Name</div>
         <input
           type="text"
-          name="name"
-          value={this.state.name}
+          name="firstname"
+          value={this.state.firstname}
+          onChange={this.handleChange}
+        />
+        <div className="Tags">Last Name</div>
+        <input
+          type="text"
+          name="lastname"
+          value={this.state.lastname}
+          onChange={this.handleChange}
+        />
+        <div className="Tags">Is Active</div>
+        <input
+          type="boolean"
+          name="isactive"
+          value={this.state.isactive}
+          onChange={this.handleChange}
+        />
+        <div className="Tags">Mobile Number</div>
+        <input
+          type="number"
+          name="mobile"
+          value={this.state.mobile}
           onChange={this.handleChange}
         />
        

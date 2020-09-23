@@ -284,4 +284,21 @@ input[type="password"] {
   margin-bottom: 10px;
   border-radius: 3px;
 }
-/**/
+/*log*/
+.data-table{
+  height:auto;
+  width:80%; 
+ margin-left:5%;
+  border:1px solid red;
+  overflow: hidden;
+}
+.values{
+  background:transparent;
+  border:0px;
+}
+.table td{
+  padding: 0px!important;
+}
+#cells{width:50px;
+  height: auto;
+border:2px solid red;}
