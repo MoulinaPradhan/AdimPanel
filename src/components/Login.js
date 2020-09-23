@@ -11,8 +11,8 @@ class Login extends React.Component {
       email: "",
       firstname: "",
       lastname:"",
-      isactive: false,
-      mobile:1,
+      isactive: "",
+      mobile:"",
       password: "",
       fireErrors: "",
       formTitle: "Login",
@@ -127,7 +127,7 @@ class Login extends React.Component {
         />
         <div className="Tags">Mobile Number</div>
         <input
-          type="number"
+          type="text"
           name="mobile"
           value={this.state.mobile}
           onChange={this.handleChange}

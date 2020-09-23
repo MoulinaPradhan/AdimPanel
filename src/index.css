@@ -288,8 +288,8 @@ input[type="password"] {
 .data-table{
   height:auto;
   width:80%; 
- margin-left:5%;
-  border:1px solid red;
+ margin-left:10%;
+  border:1px solid darkslategrey;
   overflow: hidden;
 }
 .values{
